@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Chu's Bistrô Chinês</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cea048508b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER - barra de menus -->
+  <header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo e título do site -->
+        <a href="index.html" class="navbar-brand">
+          <div id="logo-img" class="float-left d-none d-lg-block"></div>
+          <h1>restaurante do Lima</h1>
+          <p>
+            <img src="images/star-k-logo.png" alt="Certificação Kosher">
+            <span>Certificação Kosher</span>
+          </p>
+        </a>
+        <!-- final Logo e título do site -->
+        <!-- Botão de menu responsivo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Final - Botão de menu responsivo -->
+        <!-- Menu de opções -->
+        <div class="collapse navbar-collapse ml-auto mb-auto pt-40" id="navbarSupportedContent">
+          <ul id="nav-list" class="navbar-nav ml-auto">
+            <!-- itens de menu para a direita ml-auto -->
+            <li class="nav-item">
+              <a href="#" class="nav-link d-lg-flex flex-column">
+                <i class="fas fa-utensils"></i> Menu
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-lg-flex flex-column">
+                <i class="fas fa-info"></i> Sobre
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link d-lg-flex flex-column">
+                <i class="fas fa-award"></i> Prêmios
+              </a>
+            </li>
+            <li class="d-none d-lg-block" id="phone">
+              <a href="tel:+55479999-9999">
+                <span>(47) 9999-9999</span>
+                <div>* Fazemos entregas</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Final do menu -->
+    </nav>
+  </header>
+  <!-- final do HEADER -->
+
+  <div id="call-btn" class="d-md-block d-lg-none">
+    <a class="btn btn-primary" href="tel:+55479999-9999">
+      <i class="fas fa-phone"></i>
+      (47) 9999-9999
+    </a>
+  </div>
+  <div id="md-deliver" class="d-md-flex d-lg-none">
+    <span class="mx-auto">* Fazemos Entregas</span>
+  </div>
+
+
+  <div id="principal" class="container">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Foto do restaurante" class="img-fluid d-sm-block d-md-none">
+    </div>
+
+    <div id="principal-itens" class="row">
+      <div class="col-lg-4 col-md-6">
+        <a href="#">
+          <div id="menu-item"><span>menu</span></div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <a href="#">
+          <div id="especialidades-item"><span>especialidades</span></div>
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea"
+          target="_blank">
+          <div id="map-tile">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156"
+              width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span>mapa</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- fim do conteúdo principal -->
+  <!-- rodape -->
+  <footer class="painel-rodape">
+    <div class="container">
+      <div class="row">
+        <section id="horario" class="col-md-4">
+          <span>Aberto em:</span><br>
+          Seg-Qui: 11:15 - 22:00<br>
+          Sex: 11:15 - 14:30<br>
+          Fechado aos finais de semana.
+          <hr class="d-sm-block d-md-none">
+        </section>
+        <section id="endereco" class="col-md-4">
+          <span>Endereço:</span><br>
+          R. dos Unicórnios, 123<br>
+          Reino Mágico dos Ursinhos Carinhosos
+          <p>* Entregas num raio de 5km, para pedidos acima de R$ 50.</p>
+          <hr class="d-sm-block d-md-none">
+        </section>
+        <section id="opinioes" class="col-md-4">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae.</p>
+          <p>Reprehenderit enim fugiat ab qui, neque officiis unde quod sapiente ullam excepturi quaerat labore
+            obcaecati velit optio ratione.</p>
+        </section>
+      </div>
+    </div>
+  </footer>
+  <!-- final do rodapé -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
